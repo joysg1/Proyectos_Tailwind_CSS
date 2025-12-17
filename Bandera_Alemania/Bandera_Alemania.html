@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandera de Alemania | Historia y Simbolismo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'germany-black': '#000000',
+                        'germany-red': '#DD0000',
+                        'germany-gold': '#FFCE00',
+                        'germany-gray': '#1a1a1a',
+                        'germany-light': '#2d2d2d',
+                        'germany-accent': '#333333',
+                    },
+                    fontFamily: {
+                        'display': ['Montserrat', 'system-ui', 'sans-serif'],
+                        'body': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'float': 'float 3s ease-in-out infinite',
+                        'gradient': 'gradient 8s ease infinite',
+                        'pulse-glow': 'pulseGlow 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        gradient: {
+                            '0%, 100%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' },
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { opacity: '1' },
+                            '50%': { opacity: '0.7' },
+                        },
+                    },
+                    backgroundImage: {
+                        'germany-gradient': 'linear-gradient(135deg, #000000 0%, #DD0000 50%, #FFCE00 100%)',
+                        'germany-subtle': 'linear-gradient(135deg, rgba(0,0,0,0.1) 0%, rgba(221,0,0,0.1) 50%, rgba(255,206,0,0.1) 100%)',
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        /* Estilos personalizados */
+        .glass-effect {
+            background: rgba(26, 26, 26, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .dark-glass {
+            background: rgba(20, 20, 20, 0.7);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .flag-design {
+            display: flex;
+            flex-direction: column;
+            aspect-ratio: 5/3;
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+        
+        .flag-black {
+            height: 33.33%;
+            background-color: #000000;
+        }
+        
+        .flag-red {
+            height: 33.33%;
+            background-color: #DD0000;
+        }
+        
+        .flag-gold {
+            height: 33.33%;
+            background-color: #FFCE00;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #DD0000 0%, #FFCE00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .gradient-text-dark {
+            background: linear-gradient(135deg, #FFCE00 0%, #DD0000 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(221, 0, 0, 0.3), transparent);
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(to bottom, #000000, #DD0000, #FFCE00);
+        }
+        
+        .hover-lift {
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+        }
+        
+        .eagle-icon {
+            color: #FFCE00;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+        }
+        
+        .border-gradient {
+            border: double 2px transparent;
+            background-image: linear-gradient(rgba(26, 26, 26, 0.9), rgba(26, 26, 26, 0.9)), 
+                              linear-gradient(135deg, #000000 0%, #DD0000 50%, #FFCE00 100%);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+        }
+        
+        .border-gradient-light {
+            border: double 1px transparent;
+            background-image: linear-gradient(rgba(45, 45, 45, 0.9), rgba(45, 45, 45, 0.9)), 
+                              linear-gradient(135deg, #000000 0%, #DD0000 50%, #FFCE00 100%);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+        }
+        
+        .text-glow {
+            text-shadow: 0 0 20px rgba(255, 206, 0, 0.3);
+        }
+        
+        .animate-gradient {
+            background-size: 200% 200%;
+            animation: gradient 8s ease infinite;
+        }
+        
+        .scrollbar-dark::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .scrollbar-dark::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        
+        .scrollbar-dark::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #000000, #DD0000, #FFCE00);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="font-body bg-germany-gray text-gray-300 scrollbar-dark">
+    <!-- Navegación -->
+    <nav class="glass-effect fixed w-full z-50 py-5 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-9 h-9 rounded-full bg-gradient-to-r from-germany-black via-germany-red to-germany-gold animate-gradient"></div>
+                <span class="font-display font-bold text-xl text-white">Alemania</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#bandera" class="font-medium text-gray-300 hover:text-germany-gold transition-colors duration-300">Bandera</a>
+                <a href="#historia" class="font-medium text-gray-300 hover:text-germany-gold transition-colors duration-300">Historia</a>
+                <a href="#simbolismo" class="font-medium text-gray-300 hover:text-germany-gold transition-colors duration-300">Simbolismo</a>
+                <a href="#datos" class="font-medium text-gray-300 hover:text-germany-gold transition-colors duration-300">Datos</a>
+            </div>
+            <button class="md:hidden text-gray-300 hover:text-germany-gold transition-colors" id="mobile-menu-button">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Menú móvil -->
+        <div class="hidden md:hidden absolute top-full left-0 right-0 bg-germany-gray border-t border-germany-accent p-6 shadow-xl" id="mobile-menu">
+            <div class="flex flex-col space-y-6">
+                <a href="#bandera" class="font-medium text-gray-300 hover:text-germany-gold transition-colors py-2">Bandera</a>
+                <a href="#historia" class="font-medium text-gray-300 hover:text-germany-gold transition-colors py-2">Historia</a>
+                <a href="#simbolismo" class="font-medium text-gray-300 hover:text-germany-gold transition-colors py-2">Simbolismo</a>
+                <a href="#datos" class="font-medium text-gray-300 hover:text-germany-gold transition-colors py-2">Datos</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-28 pb-20 px-6 md:pt-36 md:pb-28 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-germany-black via-germany-gray to-germany-accent opacity-90"></div>
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2070')] bg-cover bg-center opacity-10"></div>
+        <div class="max-w-7xl mx-auto relative">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="animate-slide-up">
+                    <div class="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-germany-accent to-germany-light mb-8 border border-germany-accent">
+                        <i class="fas fa-flag text-germany-gold mr-3"></i>
+                        <span class="text-sm font-medium text-gray-300">Símbolo Nacional</span>
+                    </div>
+                    <h1 class="font-display font-bold text-5xl md:text-7xl text-white leading-tight mb-8">
+                        Bandera de 
+                        <span class="gradient-text">Alemania</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-400 mb-10 leading-relaxed">
+                        Un símbolo de unidad, libertad y democracia que representa la rica historia 
+                        y el progreso de la nación alemana.
+                    </p>
+                    <div class="flex flex-wrap gap-5">
+                        <a href="#bandera" class="px-8 py-4 bg-gradient-to-r from-germany-black via-germany-red to-germany-gold text-white rounded-xl font-medium hover:opacity-90 transition-opacity shadow-lg hover:shadow-xl">
+                            Explorar Bandera
+                        </a>
+                        <a href="#historia" class="px-8 py-4 dark-glass text-gray-300 rounded-xl font-medium hover:border-germany-gold transition-all duration-300 border-gradient">
+                            Conocer Historia
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Bandera destacada -->
+                <div class="animate-fade-in">
+                    <div class="relative">
+                        <div class="absolute -inset-6 bg-gradient-to-r from-germany-black via-germany-red to-germany-gold opacity-20 rounded-3xl blur-2xl animate-pulse-glow"></div>
+                        <div class="relative dark-glass rounded-3xl p-10 shadow-2xl hover-lift border-gradient">
+                            <div class="flag-design shadow-2xl">
+                                <div class="flag-black"></div>
+                                <div class="flag-red"></div>
+                                <div class="flag-gold"></div>
+                            </div>
+                            <div class="mt-10 text-center">
+                                <p class="text-md text-gray-400 font-medium mb-4">Proporción oficial 5:3 (tricolor horizontal)</p>
+                                <div class="flex justify-center space-x-6">
+                                    <div class="flex items-center">
+                                        <div class="w-6 h-6 bg-germany-black rounded-md mr-3 border border-gray-700"></div>
+                                        <span class="text-sm font-medium text-gray-300">Negro</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-6 h-6 bg-germany-red rounded-md mr-3 border border-gray-700"></div>
+                                        <span class="text-sm font-medium text-gray-300">Rojo</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-6 h-6 bg-germany-gold rounded-md mr-3 border border-gray-700"></div>
+                                        <span class="text-sm font-medium text-gray-300">Oro</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-germany-gold opacity-5 rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Bandera -->
+    <section id="bandera" class="py-24 px-6 bg-germany-light">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="font-display font-bold text-4xl md:text-5xl text-white mb-6">
+                    Diseño y <span class="gradient-text-dark">Estructura</span>
+                </h2>
+                <p class="text-gray-400 max-w-3xl mx-auto text-lg">
+                    La bandera alemana se caracteriza por su tricolor horizontal en negro, rojo y oro, 
+                    representando los valores democráticos de la República Federal de Alemania.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="dark-glass rounded-3xl p-10 hover-lift border-gradient-light">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-r from-germany-black to-gray-800 flex items-center justify-center mb-8 shadow-lg">
+                        <i class="fas fa-layer-group text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-2xl text-white mb-6">Diseño Tricolor</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Tres franjas horizontales de igual tamaño: negro (arriba), rojo (centro) y oro (abajo).
+                    </p>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-center">
+                            <div class="w-5 h-5 bg-germany-black rounded-sm mr-3 border border-gray-700"></div>
+                            <span>Negro (#000000)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-5 h-5 bg-germany-red rounded-sm mr-3 border border-gray-700"></div>
+                            <span>Rojo (#DD0000)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-5 h-5 bg-germany-gold rounded-sm mr-3 border border-gray-700"></div>
+                            <span>Oro (#FFCE00)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-ruler-combined mr-3 text-germany-gold"></i>
+                            <span>Proporción oficial: 5:3</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="dark-glass rounded-3xl p-10 hover-lift border-gradient-light">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-r from-germany-red to-red-800 flex items-center justify-center mb-8 shadow-lg">
+                        <i class="fas fa-palette text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-2xl text-white mb-6">Colores Oficiales</h3>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        Cada color tiene un significado histórico y simbólico en la identidad nacional alemana.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-center p-4 rounded-xl bg-germany-accent">
+                            <div class="w-10 h-10 rounded-lg bg-germany-black mr-5 flex items-center justify-center">
+                                <i class="fas fa-moon text-gray-300"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-white">Negro</h4>
+                                <p class="text-sm text-gray-400">Determinación, oscuridad del pasado superada</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 rounded-xl bg-germany-accent">
+                            <div class="w-10 h-10 rounded-lg bg-germany-red mr-5 flex items-center justify-center">
+                                <i class="fas fa-heart text-gray-300"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-white">Rojo</h4>
+                                <p class="text-sm text-gray-400">Sangre derramada por la libertad, valentía</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 rounded-xl bg-germany-accent">
+                            <div class="w-10 h-10 rounded-lg bg-germany-gold mr-5 flex items-center justify-center">
+                                <i class="fas fa-sun text-gray-800"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-white">Oro</h4>
+                                <p class="text-sm text-gray-400">Luz, riqueza, honor y futuro brillante</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dark-glass rounded-3xl p-10 hover-lift border-gradient-light">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-r from-germany-black via-germany-red to-germany-gold flex items-center justify-center mb-8 shadow-lg">
+                        <i class="fas fa-eagle text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-2xl text-white mb-6">Variaciones</h3>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        Existen diferentes versiones de la bandera para usos específicos y oficiales.
+                    </p>
+                    <div class="space-y-8">
+                        <div class="flex items-start p-4 rounded-xl bg-germany-accent">
+                            <i class="fas fa-landmark eagle-icon text-2xl mr-5 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium text-white">Bandera Estatal</h4>
+                                <p class="text-sm text-gray-400">Incluye el escudo de armas (águila federal) en el centro</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start p-4 rounded-xl bg-germany-accent">
+                            <i class="fas fa-anchor text-germany-red text-2xl mr-5 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium text-white">Bandera Naval</h4>
+                                <p class="text-sm text-gray-400">Escudo de armas en la esquina superior izquierda</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start p-4 rounded-xl bg-germany-accent">
+                            <i class="fas fa-flag text-germany-gold text-2xl mr-5 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium text-white">Bandera Presidencial</h4>
+                                <p class="text-sm text-gray-400">Águila federal de mayor tamaño en el centro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Historia -->
+    <section id="historia" class="py-24 px-6 bg-gradient-to-b from-germany-light to-germany-gray">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="font-display font-bold text-4xl md:text-5xl text-white mb-6">
+                    Historia y <span class="gradient-text">Origen</span>
+                </h2>
+                <p class="text-gray-400 max-w-3xl mx-auto text-lg">
+                    La bandera alemana tiene sus raíces en los movimientos de liberación del siglo XIX, 
+                    evolucionando hasta convertirse en el símbolo de la Alemania reunificada.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="dark-glass rounded-3xl p-10 shadow-2xl hover-lift border-gradient">
+                        <div class="aspect-video rounded-xl overflow-hidden mb-10 bg-gradient-to-br from-germany-accent to-germany-gray flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-landmark text-6xl text-gray-700 mb-6"></i>
+                                <p class="text-gray-500 font-medium text-lg">1848 - Revolución</p>
+                            </div>
+                        </div>
+                        <h3 class="font-display font-bold text-3xl text-white mb-6">
+                            Origen Histórico
+                        </h3>
+                        <p class="text-gray-400 mb-8 leading-relaxed text-lg">
+                            Los colores negro, rojo y dorado se originaron en las Guerras Napoleónicas, 
+                            usados por los voluntarios de la Prusia Libre. Fueron adoptados oficialmente 
+                            por la Confederación Alemana en 1848 durante la Revolución de Marzo, 
+                            simbolizando la unidad y libertad alemana.
+                        </p>
+                        <div class="flex items-center text-germany-gold p-4 rounded-xl bg-germany-accent">
+                            <i class="fas fa-calendar-day mr-4 text-2xl"></i>
+                            <span class="font-medium text-lg">Oficializada: 23 de mayo de 1949</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Elementos decorativos -->
+                    <div class="absolute -z-10 -top-8 -left-8 w-40 h-40 bg-germany-red opacity-5 rounded-full"></div>
+                    <div class="absolute -z-10 -bottom-6 -right-6 w-32 h-32 bg-germany-gold opacity-5 rounded-full"></div>
+                </div>
+                
+                <div class="space-y-10">
+                    <div class="relative timeline-item pl-10">
+                        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-germany-black border-4 border-germany-gray -translate-x-4 shadow-lg"></div>
+                        <h4 class="font-display font-bold text-2xl text-white mb-4">Revolución de 1848</h4>
+                        <p class="text-gray-400 leading-relaxed">
+                            Durante la Revolución de Marzo, los colores negro, rojo y dorado fueron adoptados 
+                            como símbolo del movimiento democrático y la unidad nacional.
+                        </p>
+                    </div>
+                    
+                    <div class="relative timeline-item pl-10">
+                        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-germany-red border-4 border-germany-gray -translate-x-4 shadow-lg"></div>
+                        <h4 class="font-display font-bold text-2xl text-white mb-4">República de Weimar</h4>
+                        <p class="text-gray-400 leading-relaxed">
+                            Tras la Primera Guerra Mundial, la bandera tricolor fue adoptada oficialmente 
+                            por la República de Weimar el 11 de agosto de 1919.
+                        </p>
+                    </div>
+                    
+                    <div class="relative timeline-item pl-10">
+                        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-gradient-to-r from-germany-black via-germany-red to-germany-gold border-4 border-germany-gray -translate-x-4 shadow-lg"></div>
+                        <h4 class="font-display font-bold text-2xl text-white mb-4">Reunificación Alemana</h4>
+                        <p class="text-gray-400 leading-relaxed">
+                            Con la reunificación de Alemania en 1990, la bandera tricolor se convirtió 
+                            en el símbolo de la Alemania reunificada y democrática.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Simbolismo -->
+    <section id="simbolismo" class="py-24 px-6 bg-germany-light">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="font-display font-bold text-4xl md:text-5xl text-white mb-6">
+                    Simbolismo y <span class="gradient-text-dark">Significado</span>
+                </h2>
+                <p class="text-gray-400 max-w-3xl mx-auto text-lg">
+                    Cada elemento de la bandera alemana contiene un profundo significado histórico y cultural.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-10 mb-16">
+                <div class="dark-glass rounded-3xl p-10 hover-lift border-gradient-light">
+                    <div class="flex items-center mb-8">
+                        <div class="w-16 h-16 rounded-xl bg-gradient-to-r from-germany-black to-gray-900 flex items-center justify-center mr-6">
+                            <i class="fas fa-unity text-germany-gold text-2xl"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-2xl text-white">Unidad Nacional</h3>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        La bandera representa la unidad del pueblo alemán, superando las divisiones 
+                        históricas entre los distintos estados alemanes. Es un símbolo de la identidad 
+                        nacional compartida.
+                    </p>
+                    <div class="flex items-center text-germany-gold">
+                        <i class="fas fa-quote-left mr-3"></i>
+                        <span class="italic">"Einigkeit und Recht und Freiheit" (Unidad, justicia y libertad)</span>
+                    </div>
+                </div>
+                
+                <div class="dark-glass rounded-3xl p-10 hover-lift border-gradient-light">
+                    <div class="flex items-center mb-8">
+                        <div class="w-16 h-16 rounded-xl bg-gradient-to-r from-germany-red to-red-900 flex items-center justify-center mr-6">
+                            <i class="fas fa-democracy text-white text-2xl"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-2xl text-white">Democracia y Libertad</h3>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Los colores simbolizan los valores democráticos de la República Federal de Alemania: 
+                        el compromiso con la libertad, los derechos humanos y el estado de derecho.
+                    </p>
+                    <div class="flex items-center text-germany-gold">
+                        <i class="fas fa-balance-scale mr-3"></i>
+                        <span class="font-medium">Símbolo constitucional desde 1949</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-gradient-to-r from-germany-black/30 via-germany-red/30 to-germany-gold/30 rounded-3xl p-10 border border-germany-accent">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+                    <div class="md:w-2/3">
+                        <h3 class="font-display font-bold text-3xl text-white mb-6">
+                            El Águila Federal
+                        </h3>
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            El escudo de armas de Alemania, conocido como "Bundesadler" (Águila Federal), 
+                            aparece en las versiones estatales de la bandera. Este símbolo tiene sus raíces 
+                            en el Sacro Imperio Romano Germánico y representa la soberanía, fuerza y autoridad 
+                            del estado alemán.
+                        </p>
+                        <div class="flex items-center text-germany-gold">
+                            <i class="fas fa-feather-alt mr-3"></i>
+                            <span class="font-medium">Diseño actual creado por Karl-Tobias Schwab en 1928</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-6">
+                        <div class="w-24 h-24 rounded-2xl bg-germany-accent flex items-center justify-center shadow-2xl">
+                            <i class="fas fa-eagle text-germany-gold text-5xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Datos -->
+    <section id="datos" class="py-24 px-6 bg-germany-gray">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="font-display font-bold text-4xl md:text-5xl text-white mb-6">
+                    Datos y <span class="gradient-text">Curiosidades</span>
+                </h2>
+                <p class="text-gray-400 max-w-3xl mx-auto text-lg">
+                    Conoce aspectos interesantes sobre el principal símbolo patrio alemán.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="dark-glass rounded-3xl p-8 hover-lift border-gradient-light">
+                    <div class="text-4xl font-bold gradient-text mb-4">3 de octubre</div>
+                    <h4 class="font-display font-bold text-xl text-white mb-4">Día de la Unidad Alemana</h4>
+                    <p class="text-sm text-gray-400">
+                        Fiesta nacional que conmemora la reunificación de Alemania en 1990, 
+                        cuando se izó oficialmente la bandera negra-roja-dorada en el Reichstag.
+                    </p>
+                </div>
+                
+                <div class="dark-glass rounded-3xl p-8 hover-lift border-gradient-light">
+                    <div class="text-4xl font-bold text-germany-red mb-4">1848</div>
+                    <h4 class="font-display font-bold text-xl text-white mb-4">Primera Adopción</h4>
+                    <p class="text-sm text-gray-400">
+                        Año en que la bandera tricolor fue adoptada por primera vez 
+                        por el Parlamento de Frankfurt durante la Revolución de Marzo.
+                    </p>
+                </div>
+                
+                <div class="dark-glass rounded-3xl p-8 hover-lift border-gradient-light">
+                    <div class="text-4xl font-bold text-white mb-4">1949</div>
+                    <h4 class="font-display font-bold text-xl text-white mb-4">Bandera de la RFA</h4>
+                    <p class="text-sm text-gray-400">
+                        La bandera tricolor fue reinstaurada como bandera oficial de la 
+                        República Federal de Alemania tras la Segunda Guerra Mundial.
+                    </p>
+                </div>
+                
+                <div class="dark-glass rounded-3xl p-8 hover-lift border-gradient-light">
+                    <div class="text-4xl font-bold gradient-text-dark mb-4">5:3</div>
+                    <h4 class="font-display font-bold text-xl text-white mb-4">Proporción Oficial</h4>
+                    <p class="text-sm text-gray-400">
+                        Relación estándar entre el alto y ancho de la bandera nacional alemana, 
+                        aunque también se usa comúnmente la proporción 3:2.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-16 dark-glass rounded-3xl p-10 border-gradient">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+                    <div class="md:w-2/3">
+                        <h3 class="font-display font-bold text-3xl text-white mb-6">
+                            Protocolo y Uso Oficial
+                        </h3>
+                        <p class="text-gray-400 mb-6 leading-relaxed">
+                            En Alemania existe un protocolo específico para el izado de la bandera. 
+                            Debe izarse desde el amanecer hasta el atardecer en edificios públicos 
+                            los días festivos nacionales. Nunca debe tocar el suelo y debe ser 
+                            tratada con respeto en todo momento.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-calendar-alt text-germany-gold mr-3"></i>
+                                <span class="text-gray-300">Días de izado oficial</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-times-circle text-germany-red mr-3"></i>
+                                <span class="text-gray-300">Prohibido modificar diseño</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-6">
+                        <div class="w-16 h-16 rounded-2xl bg-germany-black flex items-center justify-center shadow-lg">
+                            <i class="fas fa-flag text-white text-2xl"></i>
+                        </div>
+                        <div class="w-16 h-16 rounded-2xl bg-germany-red flex items-center justify-center shadow-lg">
+                            <i class="fas fa-landmark text-white text-2xl"></i>
+                        </div>
+                        <div class="w-16 h-16 rounded-2xl bg-germany-gold flex items-center justify-center shadow-lg">
+                            <i class="fas fa-gem text-gray-800 text-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-germany-black text-white py-16 px-6 border-t border-germany-accent">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-12">
+                <div>
+                    <div class="flex items-center space-x-3 mb-8">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-germany-black via-germany-red to-germany-gold animate-gradient"></div>
+                        <span class="font-display font-bold text-2xl">Alemania</span>
+                    </div>
+                    <p class="text-gray-500 mb-8 leading-relaxed">
+                        Portal dedicado a la bandera nacional de Alemania, su historia, 
+                        simbolismo y significado en la identidad alemana moderna.
+                    </p>
+                    <div class="flex space-x-5">
+                        <a href="#" class="w-12 h-12 rounded-full bg-germany-accent flex items-center justify-center hover:bg-germany-red transition-all duration-300 hover:-translate-y-1">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-germany-accent flex items-center justify-center hover:bg-germany-red transition-all duration-300 hover:-translate-y-1">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-germany-accent flex items-center justify-center hover:bg-germany-red transition-all duration-300 hover:-translate-y-1">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-display font-bold text-xl mb-8 text-germany-gold">Enlaces</h4>
+                    <ul class="space-y-5">
+                        <li><a href="#bandera" class="text-gray-500 hover:text-germany-gold transition-colors duration-300 text-lg">Diseño de la Bandera</a></li>
+                        <li><a href="#historia" class="text-gray-500 hover:text-germany-gold transition-colors duration-300 text-lg">Historia</a></li>
+                        <li><a href="#simbolismo" class="text-gray-500 hover:text-germany-gold transition-colors duration-300 text-lg">Simbolismo</a></li>
+                        <li><a href="#datos" class="text-gray-500 hover:text-germany-gold transition-colors duration-300 text-lg">Datos Interesantes</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-display font-bold text-xl mb-8 text-germany-gold">Símbolos Nacionales</h4>
+                    <ul class="space-y-5 text-gray-500">
+                        <li class="flex items-center text-lg">
+                            <i class="fas fa-flag mr-4 text-germany-red"></i>
+                            <span>Bandera Nacional (Schwarz-Rot-Gold)</span>
+                        </li>
+                        <li class="flex items-center text-lg">
+                            <i class="fas fa-eagle mr-4 text-germany-gold"></i>
+                            <span>Escudo de Armas (Águila Federal)</span>
+                        </li>
+                        <li class="flex items-center text-lg">
+                            <i class="fas fa-music mr-4 text-red-500"></i>
+                            <span>Himno Nacional (Das Lied der Deutschen)</span>
+                        </li>
+                        <li class="flex items-center text-lg">
+                            <i class="fas fa-feather mr-4 text-yellow-500"></i>
+                            <span>Animal Nacional (Águila Real)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section-divider my-12"></div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center text-gray-600">
+                <p class="mb-4 md:mb-0">© 2024 Bandera de Alemania. Todos los derechos reservados.</p>
+                <p>
+                    Diseñado con <i class="fas fa-heart text-germany-red mx-2"></i> 
+                    usando Tailwind CSS
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Navegación suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Cerrar menú móvil si está abierto
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // Animación de aparición al hacer scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+        
+        // Observar elementos para animación
+        document.querySelectorAll('.hover-lift').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Menú móvil
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                
+                // Cambiar ícono
+                const icon = mobileMenuButton.querySelector('i');
+                if (mobileMenu.classList.contains('hidden')) {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                } else {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                }
+            });
+        }
+        
+        // Cerrar menú al hacer clic fuera
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.classList.contains('hidden') && 
+                !mobileMenu.contains(e.target) && 
+                !mobileMenuButton.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+                const icon = mobileMenuButton.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Log de consola profesional
+        console.log('%c🇩🇪 Bandera de Alemania', 'color: #DD0000; font-size: 18px; font-weight: bold;');
+        console.log('%cDiseño elegante con tema oscuro', 'color: #FFCE00; font-size: 14px; font-weight: bold;');
+        console.log('%cColores oficiales: Negro #000000, Rojo #DD0000, Oro #FFCE00', 'color: #999; font-size: 11px;');
+        
+        // Efecto de aparición gradual en elementos
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            elements.forEach((el, index) => {
+                el.style.transitionDelay = `${index * 0.1}s`;
+            });
+        });
+    </script>
+</body>
+</html>
