@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandera de Panamá | Símbolo Nacional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'panama-blue': '#005293',
+                        'panama-red': '#da121a',
+                        'panama-light': '#f8f9fa',
+                    },
+                    fontFamily: {
+                        'display': ['Montserrat', 'system-ui', 'sans-serif'],
+                        'body': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .flag-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            aspect-ratio: 3/2;
+        }
+        
+        .quadrant-white-blue {
+            background-color: white;
+            position: relative;
+        }
+        
+        .quadrant-red {
+            background-color: #da121a;
+        }
+        
+        .quadrant-blue {
+            background-color: #005293;
+        }
+        
+        .quadrant-white-red {
+            background-color: white;
+            position: relative;
+        }
+        
+        .star-position {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #005293 0%, #da121a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(0, 82, 147, 0.2), transparent);
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(to bottom, #005293, #da121a);
+        }
+        
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-body bg-panama-light text-gray-800">
+    <!-- Navegación -->
+    <nav class="glass-effect fixed w-full z-50 py-4 px-6 shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 rounded-full bg-gradient-to-r from-panama-blue to-panama-red"></div>
+                <span class="font-display font-bold text-xl text-gray-900">Panamá</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#bandera" class="font-medium hover:text-panama-blue transition-colors">Bandera</a>
+                <a href="#historia" class="font-medium hover:text-panama-blue transition-colors">Historia</a>
+                <a href="#simbolismo" class="font-medium hover:text-panama-blue transition-colors">Simbolismo</a>
+                <a href="#datos" class="font-medium hover:text-panama-blue transition-colors">Datos</a>
+            </div>
+            <button class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-24 pb-16 px-6 md:pt-32 md:pb-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-slide-up">
+                    <div class="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-blue-50 to-red-50 mb-6">
+                        <i class="fas fa-flag text-panama-blue mr-2"></i>
+                        <span class="text-sm font-medium">Símbolo Nacional</span>
+                    </div>
+                    <h1 class="font-display font-bold text-4xl md:text-6xl text-gray-900 leading-tight mb-6">
+                        Bandera de 
+                        <span class="gradient-text">Panamá</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
+                        Un símbolo de soberanía, paz y unidad que representa los ideales 
+                        y la identidad del pueblo panameño desde su independencia.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#bandera" class="px-6 py-3 bg-gradient-to-r from-panama-blue to-panama-red text-white rounded-lg font-medium hover:opacity-90 transition-opacity">
+                            Explorar Bandera
+                        </a>
+                        <a href="#historia" class="px-6 py-3 bg-white border border-gray-200 text-gray-700 rounded-lg font-medium hover:border-panama-blue transition-colors">
+                            Conocer Historia
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Bandera destacada -->
+                <div class="animate-fade-in">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-panama-blue to-panama-red opacity-10 rounded-3xl blur-xl"></div>
+                        <div class="relative bg-white rounded-2xl p-8 shadow-2xl hover-lift">
+                            <div class="flag-grid rounded-xl overflow-hidden border-8 border-gray-100 shadow-inner">
+                                <div class="quadrant-white-blue">
+                                    <i class="star-position fas fa-star text-4xl text-panama-blue animate-float"></i>
+                                </div>
+                                <div class="quadrant-red"></div>
+                                <div class="quadrant-blue"></div>
+                                <div class="quadrant-white-red">
+                                    <i class="star-position fas fa-star text-4xl text-panama-red animate-float" style="animation-delay: 1.5s;"></i>
+                                </div>
+                            </div>
+                            <div class="mt-6 text-center">
+                                <p class="text-sm text-gray-500 font-medium">Proporción oficial 2:3</p>
+                                <div class="flex justify-center space-x-4 mt-2">
+                                    <div class="flex items-center">
+                                        <div class="w-4 h-4 bg-white border border-gray-300 rounded-sm mr-2"></div>
+                                        <span class="text-xs">Blanco</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-4 h-4 bg-panama-blue rounded-sm mr-2"></div>
+                                        <span class="text-xs">Azul</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-4 h-4 bg-panama-red rounded-sm mr-2"></div>
+                                        <span class="text-xs">Rojo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Bandera -->
+    <section id="bandera" class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display font-bold text-3xl md:text-4xl text-gray-900 mb-4">
+                    Diseño y <span class="text-panama-blue">Estructura</span>
+                </h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    La bandera panameña se caracteriza por su diseño cuadripartito único, 
+                    representando el equilibrio y la armonía de la nación.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-2xl p-8 hover-lift">
+                    <div class="w-12 h-12 rounded-lg bg-gradient-to-r from-panama-blue to-blue-400 flex items-center justify-center mb-6">
+                        <i class="fas fa-th text-white text-xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-gray-900 mb-4">Cuadrantes</h3>
+                    <p class="text-gray-600 mb-4">
+                        Dividida en cuatro cuarteles iguales que representan la organización 
+                        y estructura del estado panameño.
+                    </p>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center">
+                            <i class="fas fa-square text-white bg-gray-400 p-1 rounded mr-2"></i>
+                            <span>Superior izquierdo: Blanco con estrella azul</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-square text-panama-red mr-2"></i>
+                            <span>Superior derecho: Rojo sólido</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-square text-panama-blue mr-2"></i>
+                            <span>Inferior izquierdo: Azul sólido</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-square text-white border border-gray-300 p-1 rounded mr-2"></i>
+                            <span>Inferior derecho: Blanco con estrella roja</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl p-8 hover-lift">
+                    <div class="w-12 h-12 rounded-lg bg-gradient-to-r from-panama-red to-red-400 flex items-center justify-center mb-6">
+                        <i class="fas fa-palette text-white text-xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-gray-900 mb-4">Colores Oficiales</h3>
+                    <p class="text-gray-600 mb-6">
+                        Cada color tiene un significado profundo en la identidad nacional.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-lg bg-white border border-gray-200 mr-4"></div>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Blanco</h4>
+                                <p class="text-sm text-gray-600">Paz y unidad nacional</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-lg bg-panama-blue mr-4"></div>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Azul</h4>
+                                <p class="text-sm text-gray-600">Partido Conservador</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-lg bg-panama-red mr-4"></div>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Rojo</h4>
+                                <p class="text-sm text-gray-600">Partido Liberal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl p-8 hover-lift">
+                    <div class="w-12 h-12 rounded-lg bg-gradient-to-r from-yellow-500 to-yellow-400 flex items-center justify-center mb-6">
+                        <i class="fas fa-star text-white text-xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-gray-900 mb-4">Simbolismo</h3>
+                    <p class="text-gray-600 mb-6">
+                        Las estrellas representan los valores fundamentales de la nación.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-star text-panama-blue text-xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Estrella Azul</h4>
+                                <p class="text-sm text-gray-600">Pureza y honestidad en la vida cívica</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-star text-panama-red text-xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Estrella Roja</h4>
+                                <p class="text-sm text-gray-600">Autoridad y ley que rigen la nación</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Historia -->
+    <section id="historia" class="py-20 px-6 bg-gradient-to-b from-white to-panama-light">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display font-bold text-3xl md:text-4xl text-gray-900 mb-4">
+                    Historia y <span class="text-panama-red">Origen</span>
+                </h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    La creación de la bandera panameña está ligada íntimamente a la historia 
+                    de independencia y soberanía del país.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="bg-white rounded-2xl p-8 shadow-xl hover-lift">
+                        <div class="aspect-video rounded-xl overflow-hidden mb-6">
+                            <div class="w-full h-full bg-gradient-to-br from-blue-50 to-red-50 flex items-center justify-center">
+                                <div class="text-center">
+                                    <i class="fas fa-history text-6xl text-gray-300 mb-4"></i>
+                                    <p class="text-gray-500 font-medium">1903</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="font-display font-bold text-2xl text-gray-900 mb-4">Creación y Adopción</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            La bandera fue diseñada por Manuel Encarnación Amador Torrero, 
+                            hijo del primer presidente de Panamá, y confeccionada por su madre, 
+                            María de la Ossa de Amador. Fue adoptada oficialmente mediante 
+                            la Ley 64 de 1904, convirtiéndose en el primer símbolo patrio 
+                            de la nueva república.
+                        </p>
+                        <div class="flex items-center text-gray-500">
+                            <i class="fas fa-calendar-day mr-2"></i>
+                            <span class="font-medium">Adoptada: 20 de diciembre de 1903</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Elemento decorativo -->
+                    <div class="absolute -z-10 -top-6 -left-6 w-32 h-32 bg-panama-blue opacity-5 rounded-full"></div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="relative timeline-item pl-8">
+                        <div class="absolute left-0 top-0 w-6 h-6 rounded-full bg-panama-blue border-4 border-white -translate-x-3"></div>
+                        <h4 class="font-display font-bold text-xl text-gray-900 mb-2">Contexto Histórico</h4>
+                        <p class="text-gray-600">
+                            La bandera surge tras la separación de Panamá de Colombia en 1903, 
+                            simbolizando el inicio de una nueva era de soberanía e independencia.
+                        </p>
+                    </div>
+                    
+                    <div class="relative timeline-item pl-8">
+                        <div class="absolute left-0 top-0 w-6 h-6 rounded-full bg-panama-red border-4 border-white -translate-x-3"></div>
+                        <h4 class="font-display font-bold text-xl text-gray-900 mb-2">Significado Original</h4>
+                        <p class="text-gray-600">
+                            Los colores representaban a los dos partidos políticos históricos 
+                            (Liberal y Conservador), mientras que el blanco simbolizaba la paz 
+                            que debía reinar entre ellos.
+                        </p>
+                    </div>
+                    
+                    <div class="relative timeline-item pl-8">
+                        <div class="absolute left-0 top-0 w-6 h-6 rounded-full bg-gradient-to-r from-panama-blue to-panama-red border-4 border-white -translate-x-3"></div>
+                        <h4 class="font-display font-bold text-xl text-gray-900 mb-2">Evolución</h4>
+                        <p class="text-gray-600">
+                            Con el tiempo, la bandera ha transcendido su significado político 
+                            original para convertirse en un símbolo unificador de todos los 
+                            panameños, independientemente de sus ideologías.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Datos -->
+    <section id="datos" class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display font-bold text-3xl md:text-4xl text-gray-900 mb-4">
+                    Datos y <span class="gradient-text">Curiosidades</span>
+                </h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    Conoce aspectos interesantes sobre el principal símbolo patrio panameño.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-6 border border-blue-100 hover-lift">
+                    <div class="text-3xl font-bold text-panama-blue mb-2">1</div>
+                    <h4 class="font-display font-bold text-lg text-gray-900 mb-2">Bandera Cuadripartita</h4>
+                    <p class="text-sm text-gray-600">
+                        Una de las pocas banderas nacionales con diseño de cuatro cuadrantes diferentes.
+                    </p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-red-50 to-white rounded-2xl p-6 border border-red-100 hover-lift">
+                    <div class="text-3xl font-bold text-panama-red mb-2">2</div>
+                    <h4 class="font-display font-bold text-lg text-gray-900 mb-2">Diseño Familiar</h4>
+                    <p class="text-sm text-gray-600">
+                        Creada por una familia panameña: diseñada por el hijo y confeccionada por la madre del primer presidente.
+                    </p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 border border-gray-100 hover-lift">
+                    <div class="text-3xl font-bold text-gray-700 mb-2">1903</div>
+                    <h4 class="font-display font-bold text-lg text-gray-900 mb-2">Año de Creación</h4>
+                    <p class="text-sm text-gray-600">
+                        Diseñada y adoptada en los primeros meses tras la independencia de Colombia.
+                    </p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-gradient-to-r from-blue-50 to-red-50 to-white rounded-2xl p-6 border border-gray-100 hover-lift">
+                    <div class="text-3xl font-bold gradient-text mb-2">2:3</div>
+                    <h4 class="font-display font-bold text-lg text-gray-900 mb-2">Proporción Oficial</h4>
+                    <p class="text-sm text-gray-600">
+                        Relación estándar entre el alto y ancho de la bandera nacional.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-gradient-to-r from-panama-blue/5 to-panama-red/5 rounded-2xl p-8">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div>
+                        <h3 class="font-display font-bold text-2xl text-gray-900 mb-4">
+                            Protocolo y Uso
+                        </h3>
+                        <p class="text-gray-600 max-w-2xl">
+                            La bandera panameña debe ser izada diariamente en instituciones públicas, 
+                            con especial énfasis en fechas patrias. Debe recibir siempre el tratamiento 
+                            respetuoso que corresponde a un símbolo nacional.
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-panama-blue flex items-center justify-center">
+                            <i class="fas fa-flag text-white text-xl"></i>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-panama-red flex items-center justify-center">
+                            <i class="fas fa-hand text-white text-xl"></i>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-r from-panama-blue to-panama-red flex items-center justify-center">
+                            <i class="fas fa-heart text-white text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-8 h-8 rounded-full bg-gradient-to-r from-panama-blue to-panama-red"></div>
+                        <span class="font-display font-bold text-xl">Panamá</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Portal dedicado a la bandera nacional de Panamá, su historia, 
+                        simbolismo y significado en la identidad panameña.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-display font-bold text-lg mb-6">Enlaces</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#bandera" class="text-gray-400 hover:text-white transition-colors">Diseño de la Bandera</a></li>
+                        <li><a href="#historia" class="text-gray-400 hover:text-white transition-colors">Historia</a></li>
+                        <li><a href="#simbolismo" class="text-gray-400 hover:text-white transition-colors">Simbolismo</a></li>
+                        <li><a href="#datos" class="text-gray-400 hover:text-white transition-colors">Datos Interesantes</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-display font-bold text-lg mb-6">Símbolos Nacionales</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-flag mr-3 text-panama-red"></i>
+                            <span>Bandera Nacional</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-feather-alt mr-3 text-panama-blue"></i>
+                            <span>Escudo Nacional</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-music mr-3 text-yellow-500"></i>
+                            <span>Himno Nacional</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-feather mr-3 text-green-500"></i>
+                            <span>Ave Nacional (Águila Harpía)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section-divider my-8"></div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+                <p>© 2024 Bandera de Panamá. Todos los derechos reservados.</p>
+                <p class="mt-2 md:mt-0">
+                    Diseñado con <i class="fas fa-heart text-panama-red mx-1"></i> 
+                    usando Tailwind CSS
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Navegación suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animación de aparición al hacer scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+        
+        // Observar elementos para animación
+        document.querySelectorAll('.hover-lift').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Menú móvil
+        const mobileMenuButton = document.querySelector('button.md\\:hidden');
+        const navLinks = document.querySelector('.hidden.md\\:flex');
+        
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', () => {
+                navLinks.classList.toggle('hidden');
+                navLinks.classList.toggle('absolute');
+                navLinks.classList.toggle('top-full');
+                navLinks.classList.toggle('left-0');
+                navLinks.classList.toggle('right-0');
+                navLinks.classList.toggle('bg-white');
+                navLinks.classList.toggle('p-6');
+                navLinks.classList.toggle('shadow-lg');
+                navLinks.classList.toggle('flex-col');
+                navLinks.classList.toggle('space-y-4');
+                navLinks.classList.toggle('space-x-0');
+            });
+        }
+        
+        // Log de consola profesional
+        console.log('%c🇵🇦 Bandera de Panamá', 'color: #005293; font-size: 16px; font-weight: bold;');
+        console.log('%cDiseño profesional con Tailwind CSS', 'color: #da121a; font-size: 12px;');
+        console.log('%chttps://www.presidencia.gob.pa/Bandera', 'color: #666; font-size: 10px;');
+    </script>
+</body>
+</html>
