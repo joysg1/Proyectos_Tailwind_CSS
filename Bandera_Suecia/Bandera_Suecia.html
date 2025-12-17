@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandera de Suecia | Símbolo Nacional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'sweden-blue': '#006AA7',
+                        'sweden-yellow': '#FECC02',
+                        'sweden-light': '#f5f5f5',
+                    },
+                    fontFamily: {
+                        'display': ['Montserrat', 'system-ui', 'sans-serif'],
+                        'body': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .flag-design {
+            display: flex;
+            aspect-ratio: 16/10;
+            background-color: #006AA7;
+            position: relative;
+        }
+        
+        .flag-design::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent 20%, #FECC02 20%, #FECC02 30%, transparent 30%),
+                        linear-gradient(180deg, transparent 40%, #FECC02 40%, #FECC02 50%, transparent 50%);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #006AA7 0%, #FECC02 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(0, 106, 167, 0.2), transparent);
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(to bottom, #006AA7, #FECC02);
+        }
+        
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .crown-icon {
+            color: #FECC02;
+            filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2));
+        }
+    </style>
+</head>
+<body class="font-body bg-sweden-light text-gray-800">
+    <!-- Navegación -->
+    <nav class="glass-effect fixed w-full z-50 py-4 px-6 shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 rounded-full bg-gradient-to-r from-sweden-blue to-sweden-yellow"></div>
+                <span class="font-display font-bold text-xl text-gray-900">Suecia</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#bandera" class="font-medium hover:text-sweden-blue transition-colors">Bandera</a>
+                <a href="#historia" class="font-medium hover:text-sweden-blue transition-colors">Historia</a>
+                <a href="#simbolismo" class="font-medium hover:text-sweden-blue transition-colors">Simbolismo</a>
+                <a href="#datos" class="font-medium hover:text-sweden-blue transition-colors">Datos</a>
+            </div>
+            <button class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-24 pb-16 px-6 md:pt-32 md:pb-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-slide-up">
+                    <div class="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-blue-50 to-yellow-50 mb-6">
+                        <i class="fas fa-flag text-sweden-blue mr-2"></i>
+                        <span class="text-sm font-medium">Símbolo Nacional</span>
+                    </div>
+                    <h1 class="font-display font-bold text-4xl md:text-6xl text-gray-900 leading-tight mb-6">
+                        Bandera de 
+                        <span class="gradient-text">Suecia</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
+                        Un símbolo de historia, tradición y unidad que representa la identidad 
+                        del pueblo sueco desde el siglo XVI.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#bandera" class="px-6 py-3 bg-gradient-to-r from-sweden-blue to-sweden-yellow text-white rounded-lg font-medium hover:opacity-90 transition-opacity">
+                            Explorar Bandera
+                        </a>
+                        <a href="#historia" class="px-6 py-3 bg-white border border-gray-200 text-gray-700 rounded-lg font-medium hover:border-sweden-blue transition-colors">
+                            Conocer Historia
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Bandera destacada -->
+                <div class="animate-fade-in">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-sweden-blue to-sweden-yellow opacity-10 rounded-3xl blur-xl"></div>
+                        <div class="relative bg-white rounded-2xl p-8 shadow-2xl hover-lift">
+                            <div class="flag-design rounded-xl overflow-hidden border-8 border-gray-100 shadow-inner">
+                                <!-- La bandera se crea con CSS -->
+                            </div>
+                            <div class="mt-6 text-center">
+                                <p class="text-sm text-gray-500 font-medium">Proporción oficial 16:10 (5:3 en uso civil)</p>
+                                <div class="flex justify-center space-x-4 mt-2">
+                                    <div class="flex items-center">
+                                        <div class="w-4 h-4 bg-sweden-blue rounded-sm mr-2"></div>
+                                        <span class="text-xs">Azul</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-4 h-4 bg-sweden-yellow rounded-sm mr-2"></div>
+                                        <span class="text-xs">Amarillo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Bandera -->
+    <section id="bandera" class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display font-bold text-3xl md:text-4xl text-gray-900 mb-4">
+                    Diseño y <span class="text-sweden-blue">Estructura</span>
+                </h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    La bandera sueca se caracteriza por su diseño nórdico con una cruz amarilla sobre fondo azul, 
+                    representando la herencia cristiana y la identidad escandinava.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-2xl p-8 hover-lift">
+                    <div class="w-12 h-12 rounded-lg bg-gradient-to-r from-sweden-blue to-blue-400 flex items-center justify-center mb-6">
+                        <i class="fas fa-cross text-white text-xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-gray-900 mb-4">Diseño de la Cruz</h3>
+                    <p class="text-gray-600 mb-4">
+                        La bandera sigue el patrón de la cruz escandinava, con el brazo vertical desplazado hacia el lado del asta.
+                    </p>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center">
+                            <div class="w-4 h-4 bg-sweden-blue rounded-sm mr-2"></div>
+                            <span>Fondo azul (#006AA7)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-4 h-4 bg-sweden-yellow rounded-sm mr-2"></div>
+                            <span>Cruz amarilla (#FECC02)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-ruler-vertical mr-2 text-sweden-blue"></i>
+                            <span>Ancho cruz vertical: 2/10 del alto</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-ruler-horizontal mr-2 text-sweden-yellow"></i>
+                            <span>Ancho cruz horizontal: 2/5 del alto</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl p-8 hover-lift">
+                    <div class="w-12 h-12 rounded-lg bg-gradient-to-r from-sweden-yellow to-yellow-400 flex items-center justify-center mb-6">
+                        <i class="fas fa-palette text-white text-xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-gray-900 mb-4">Colores Oficiales</h3>
+                    <p class="text-gray-600 mb-6">
+                        Cada color tiene un significado histórico en la identidad nacional sueca.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-lg bg-sweden-blue mr-4"></div>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Azul</h4>
+                                <p class="text-sm text-gray-600">Lealtad, verdad, justicia y el cielo sueco</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-lg bg-sweden-yellow mr-4"></div>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Amarillo/Oro</h4>
+                                <p class="text-sm text-gray-600">Generosidad, el sol y la riqueza de la nación</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl p-8 hover-lift">
+                    <div class="w-12 h-12 rounded-lg bg-gradient-to-r from-sweden-blue to-sweden-yellow flex items-center justify-center mb-6">
+                        <i class="fas fa-crown text-white text-xl"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-gray-900 mb-4">Variaciones</h3>
+                    <p class="text-gray-600 mb-6">
+                        Existen diferentes versiones de la bandera para usos específicos.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-flag crown-icon text-xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Bandera Estatal</h4>
+                                <p class="text-sm text-gray-600">Incluye el escudo de armas con tres coronas en el centro</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-ship text-sweden-blue text-xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Bandera Naval</h4>
+                                <p class="text-sm text-gray-600">Proporción 1:2 con tres puntas en el extremo exterior</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Historia -->
+    <section id="historia" class="py-20 px-6 bg-gradient-to-b from-white to-sweden-light">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display font-bold text-3xl md:text-4xl text-gray-900 mb-4">
+                    Historia y <span class="text-sweden-yellow">Origen</span>
+                </h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    La bandera sueca tiene sus raíces en la historia medieval y el cristianismo, 
+                    evolucionando hasta convertirse en el símbolo nacional moderno.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="bg-white rounded-2xl p-8 shadow-xl hover-lift">
+                        <div class="aspect-video rounded-xl overflow-hidden mb-6">
+                            <div class="w-full h-full bg-gradient-to-br from-blue-50 to-yellow-50 flex items-center justify-center">
+                                <div class="text-center">
+                                    <i class="fas fa-landmark text-6xl text-gray-300 mb-4"></i>
+                                    <p class="text-gray-500 font-medium">Siglo XVI</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="font-display font-bold text-2xl text-gray-900 mb-4">Origen Histórico</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            La bandera sueca se basa en el diseño de la bandera danesa (Dannebrog), 
+                            con los colores del escudo de armas de Suecia (tres coronas de oro sobre fondo azul). 
+                            Su primera representación documentada data de 1562 durante el reinado de Juan III.
+                        </p>
+                        <div class="flex items-center text-gray-500">
+                            <i class="fas fa-calendar-day mr-2"></i>
+                            <span class="font-medium">Oficializada: 22 de junio de 1906</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Elemento decorativo -->
+                    <div class="absolute -z-10 -top-6 -left-6 w-32 h-32 bg-sweden-blue opacity-5 rounded-full"></div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="relative timeline-item pl-8">
+                        <div class="absolute left-0 top-0 w-6 h-6 rounded-full bg-sweden-blue border-4 border-white -translate-x-3"></div>
+                        <h4 class="font-display font-bold text-xl text-gray-900 mb-2">Leyenda del Origen</h4>
+                        <p class="text-gray-600">
+                            Según la leyenda, el rey Eric IX vio una cruz dorada en el cielo azul 
+                            antes de la Primera Cruzada Sueca a Finlandia en 1157, adoptando esos colores.
+                        </p>
+                    </div>
+                    
+                    <div class="relative timeline-item pl-8">
+                        <div class="absolute left-0 top-0 w-6 h-6 rounded-full bg-sweden-yellow border-4 border-white -translate-x-3"></div>
+                        <h4 class="font-display font-bold text-xl text-gray-900 mb-2">Unofficial a Official</h4>
+                        <p class="text-gray-600">
+                            Aunque usada durante siglos, la bandera no fue oficialmente regulada 
+                            hasta la Ley de Bandera de 1906 que estableció sus proporciones exactas.
+                        </p>
+                    </div>
+                    
+                    <div class="relative timeline-item pl-8">
+                        <div class="absolute left-0 top-0 w-6 h-6 rounded-full bg-gradient-to-r from-sweden-blue to-sweden-yellow border-4 border-white -translate-x-3"></div>
+                        <h4 class="font-display font-bold text-xl text-gray-900 mb-2">Día de la Bandera</h4>
+                        <p class="text-gray-600">
+                            El 6 de junio es el Día Nacional de Suecia y Día de la Bandera Sueca, 
+                            celebrado desde 1916 y convertido en fiesta nacional en 1983.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Datos -->
+    <section id="datos" class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display font-bold text-3xl md:text-4xl text-gray-900 mb-4">
+                    Datos y <span class="gradient-text">Curiosidades</span>
+                </h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    Conoce aspectos interesantes sobre el principal símbolo patrio sueco.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-6 border border-blue-100 hover-lift">
+                    <div class="text-3xl font-bold text-sweden-blue mb-2">6</div>
+                    <h4 class="font-display font-bold text-lg text-gray-900 mb-2">Junio</h4>
+                    <p class="text-sm text-gray-600">
+                        Día Nacional de Suecia y Día de la Bandera, coincidiendo con la fecha de la elección de Gustavo Vasa en 1523.
+                    </p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-yellow-50 to-white rounded-2xl p-6 border border-yellow-100 hover-lift">
+                    <div class="text-3xl font-bold text-sweden-yellow mb-2">1562</div>
+                    <h4 class="font-display font-bold text-lg text-gray-900 mb-2">Primera Documentación</h4>
+                    <p class="text-sm text-gray-600">
+                        Primera representación conocida de la bandera sueca en un libro de armas.
+                    </p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 border border-gray-100 hover-lift">
+                    <div class="text-3xl font-bold text-gray-700 mb-2">1906</div>
+                    <h4 class="font-display font-bold text-lg text-gray-900 mb-2">Oficialización</h4>
+                    <p class="text-sm text-gray-600">
+                        Año en que se establecieron legalmente los colores y proporciones exactas de la bandera.
+                    </p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-gradient-to-r from-blue-50 to-yellow-50 to-white rounded-2xl p-6 border border-gray-100 hover-lift">
+                    <div class="text-3xl font-bold gradient-text mb-2">5:8</div>
+                    <h4 class="font-display font-bold text-lg text-gray-900 mb-2">Proporción Civil</h4>
+                    <p class="text-sm text-gray-600">
+                        Relación estándar entre el alto y ancho de la bandera nacional para uso civil (1:2 para uso estatal).
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-gradient-to-r from-sweden-blue/5 to-sweden-yellow/5 rounded-2xl p-8">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div>
+                        <h3 class="font-display font-bold text-2xl text-gray-900 mb-4">
+                            Días de Izado Oficial
+                        </h3>
+                        <p class="text-gray-600 max-w-2xl">
+                            En Suecia existen días específicos cuando la bandera debe izarse en edificios públicos, 
+                            incluyendo el Día Nacional (6 junio), cumpleaños del Rey (30 abril) y el día del Premio Nobel (10 diciembre). 
+                            También se iza a media asta en días de luto nacional.
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-sweden-blue flex items-center justify-center">
+                            <i class="fas fa-flag text-white text-xl"></i>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-sweden-yellow flex items-center justify-center">
+                            <i class="fas fa-sun text-white text-xl"></i>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-r from-sweden-blue to-sweden-yellow flex items-center justify-center">
+                            <i class="fas fa-crown text-white text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-8 h-8 rounded-full bg-gradient-to-r from-sweden-blue to-sweden-yellow"></div>
+                        <span class="font-display font-bold text-xl">Suecia</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Portal dedicado a la bandera nacional de Suecia, su historia, 
+                        simbolismo y significado en la identidad sueca.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-display font-bold text-lg mb-6">Enlaces</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#bandera" class="text-gray-400 hover:text-white transition-colors">Diseño de la Bandera</a></li>
+                        <li><a href="#historia" class="text-gray-400 hover:text-white transition-colors">Historia</a></li>
+                        <li><a href="#simbolismo" class="text-gray-400 hover:text-white transition-colors">Simbolismo</a></li>
+                        <li><a href="#datos" class="text-gray-400 hover:text-white transition-colors">Datos Interesantes</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-display font-bold text-lg mb-6">Símbolos Nacionales</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-flag mr-3 text-sweden-yellow"></i>
+                            <span>Bandera Nacional</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-crown mr-3 text-sweden-blue"></i>
+                            <span>Escudo de Armas (Tres Coronas)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-music mr-3 text-yellow-500"></i>
+                            <span>Himno Nacional (Du gamla, Du fria)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-horse mr-3 text-green-500"></i>
+                            <span>Animal Nacional (Alce)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section-divider my-8"></div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+                <p>© 2024 Bandera de Suecia. Todos los derechos reservados.</p>
+                <p class="mt-2 md:mt-0">
+                    Diseñado con <i class="fas fa-heart text-sweden-yellow mx-1"></i> 
+                    usando Tailwind CSS
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Navegación suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animación de aparición al hacer scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+        
+        // Observar elementos para animación
+        document.querySelectorAll('.hover-lift').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Menú móvil
+        const mobileMenuButton = document.querySelector('button.md\\:hidden');
+        const navLinks = document.querySelector('.hidden.md\\:flex');
+        
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', () => {
+                navLinks.classList.toggle('hidden');
+                navLinks.classList.toggle('absolute');
+                navLinks.classList.toggle('top-full');
+                navLinks.classList.toggle('left-0');
+                navLinks.classList.toggle('right-0');
+                navLinks.classList.toggle('bg-white');
+                navLinks.classList.toggle('p-6');
+                navLinks.classList.toggle('shadow-lg');
+                navLinks.classList.toggle('flex-col');
+                navLinks.classList.toggle('space-y-4');
+                navLinks.classList.toggle('space-x-0');
+            });
+        }
+        
+        // Log de consola profesional
+        console.log('%c🇸🇪 Bandera de Suecia', 'color: #006AA7; font-size: 16px; font-weight: bold;');
+        console.log('%cDiseño profesional con Tailwind CSS', 'color: #FECC02; font-size: 12px;');
+        console.log('%cColores oficiales: Azul #006AA7, Amarillo #FECC02', 'color: #666; font-size: 10px;');
+    </script>
+</body>
+</html>
